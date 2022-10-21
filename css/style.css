@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,900;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    font-family: 'Montserrat', serif;
+}
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+body{
+    background: #2948B7;
+    color: #FAF9F0;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.social-links a, 
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+.social-links{
+    margin: 3.8rem auto;
+}
+.social-links a{
+    padding: 0.5rem;
+    font-size: 2rem;
+}
+.navbar a{
+    font-family: 'Fira Code', monospace;
+    padding: 2rem;
+    font-size: 1.2rem;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+}
+
+.big-text{
+    font-size: 4.6rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.smaller-text{
+    font-size: 1.8rem;
+}
+
+
+
+/* style for about section */
+.title-text,
+#about {
+    padding:1rem 3rem;
+    font-family: 'Fira Code', monospace;
+    font-size: larger;
+}
+
+#about{
+    border: none;
+    padding-bottom: 3rem;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    color: black;
+}
+.about-info{
+    padding: 10px;
+    display: flex;
+}
+
+.about-info p{
+    width: 700px;
+    text-align: left;
+}
+#about h1{
+    padding: 10px;
+}
+
+#about div{
+    display: flex;
+}
+
+.bishalImg{
+    border-radius:50%;
+    width:150px;
+}
+
+
+/* projects info  */
+
+.projects-list{
+    display: grid;
+    grid-template-columns: auto auto;
+   
+}
+
+.project-card{
+    border-radius: 0.5rem;
+    background-color: #6157a7;
+    margin: 1rem;
+}
+
+.project-card img{
+    padding: 1rem;
+    width: calc(100% - 40px);
+}
+
+.project-card p{
+    padding: 0.8rem;
+    font-family: 'Fira Code', monospace;
+}
+
+.btn-list{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 3rem;
+}
+
+.btn-list button,
+.submit-btn{
+    width: calc(50% - 1rem);
+    padding: 0.8rem 1.5rem;
+    border:2px solid rgb(255, 135, 6);
+    background-color: transparent;
+    font-family: 'Fira Code', monospace;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+
+/* contact section */
+
+#contact{
+    background-color: #FFFFFF;
+    color: #2948B7;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    padding: 2rem;
+}
+
+.form-section{
+    display: flex;
+    border: 2px solid red;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+#contact p{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 2rem;
+    text-align: left;
+}
+
+.form-section h1{
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.text-input{
+    width: 300px;
+    padding: 0.5rem;
+    margin:0.5rem 0;
+}
+
+.submit-btn{
+    width: 300px;
+}
+
+
