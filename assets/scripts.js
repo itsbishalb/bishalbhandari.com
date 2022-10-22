@@ -44,4 +44,19 @@ function loadHtml () {
 document.getElementById ('projects-list').innerHTML = loadHtml()
 
 
-  
+var buttons = document.getElementsByClassName("project-btn")
+var arr = [...buttons];
+
+arr.forEach((element, index) => {
+  element.addEventListener("click", () => {
+    element.style.borderColor = "#fff"
+
+    arr
+      .filter(function (item) {
+        return item != element;
+      })
+      .forEach((item) => {
+        item.style.borderColor = "#AAAAAA"
+      });
+  });
+});
