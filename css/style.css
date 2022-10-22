@@ -38,9 +38,11 @@ body{
 .navbar a{
     font-family: 'Fira Code', monospace;
     padding: 2rem;
+    padding-bottom: 0;
     font-size: 1.2rem;
 }
 #home{
+    margin-top:1rem;
     display: flex;
     flex-direction: column;
 }
@@ -190,9 +192,15 @@ body{
     border-radius: 10px;
 }
 .url{
+    margin-top:0;
     text-decoration: none;
-    color: inherit;
+    color: white
 }
+
+.url:hover{
+    border-bottom: 2px solid white;
+}
+
 
 /* contact section */
 
@@ -278,4 +286,201 @@ form{
     text-transform: uppercase;
     font-family: 'Chakra Petch', sans-serif;
     
+}
+
+
+
+
+@media (max-width: 600px){
+    .navbar{
+        display: none;
+    }
+
+  
+    .social-links a{
+        padding: 2rem;
+        font-size: 5rem;
+    }
+
+
+    .smaller-text{
+        font-size: 4rem;
+        padding: 20px;
+    }
+
+    .big-text{
+        font-size: 6rem;
+    }
+
+    #skills h2{
+        font-size: 3.5rem;
+    }
+
+     .title-text{
+        font-size: 3.5rem;
+     }
+
+     .skills-grid{
+        grid-template-columns: auto auto auto;
+    }
+    
+    .skill-card i{
+        display: block;
+        font-size: 200px;
+        margin-bottom: 30px;
+    }
+    .skill-card p{
+        display: block;
+        font-size: 2.2rem;
+        text-transform: uppercase;
+        font-family: 'Chakra Petch', sans-serif;  
+    }
+    .about-info p{
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    #about div{
+        display: block;
+        margin: 0;
+    }
+    
+    .bishalImg{
+        margin-top: 1rem;
+        border-radius:10%;
+        width:600px;
+        transition: 1s;
+    }
+
+    .project-btn{
+        font-size: 2.3rem;
+        text-align: center;
+        width: 300px;
+        transition: 1s;
+    }
+
+
+        .project-card{
+            height: fit-content;
+            width: calc(100% - 6rem);
+        }
+
+        .project-img{   
+        display: none;
+        }
+        .projects-links{
+            flex-direction: column;
+            align-items: center;    
+            margin-bottom: 1rem;
+        }
+        .project-title{
+            font-size: 4rem;
+        }
+        .btn-style{
+            width: 350px;
+            font-size: 3rem;
+
+        }
+        .project-card p{
+        font-size: 2rem;
+        }
+        .form-section{
+            width: 800px;
+        }
+        
+        .text-input
+        {
+            font-size: 2rem;
+        }
+        
+        #submit-btn{
+            font-size: 2.6rem;
+        }
+        
+}
+
+
+@media (max-width: 800px){
+    .navbar a{
+        font-size: 2rem;
+    }
+
+  
+    .social-links a{
+        padding: 2rem;
+        font-size: 5rem;
+    }
+
+
+    .smaller-text{
+        font-size: 4rem;
+        padding: 20px;
+    }
+
+    .big-text{
+        font-size: 6rem;
+    }
+
+    #skills h2{
+        font-size: 3.5rem;
+    }
+
+     .title-text{
+        font-size: 3.5rem;
+     }
+
+     .skills-grid{
+        grid-template-columns: auto auto auto;
+    }
+    
+    .skill-card i{
+        display: block;
+        font-size: 200px;
+        margin-bottom: 30px;
+    }
+    .skill-card p{
+        display: block;
+        font-size: 2.2rem;
+        text-transform: uppercase;
+        font-family: 'Chakra Petch', sans-serif;  
+    }
+    .about-info p{
+        font-size: 1.5rem;
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .bishalImg{
+        height: 400px;
+        border-radius: 1rem;
+    }
+        
+    .project-title{
+        font-size: 2rem;
+    }
+
+    .project-img{
+        height: 400px;
+        width: 300px;
+    }
+    .btn-style{
+        width: 250px;
+        font-size: 1.5rem;
+
+        }
+    .project-card p{
+        font-size: 1.2rem;
+    }
+    .form-section{
+        width: 800px;
+    }
+        
+    .text-input
+        {
+            font-size: 2rem;
+        }
+    #submit-btn{
+        font-size: 2.6rem;
+    }
+        
 }
