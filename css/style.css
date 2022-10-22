@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,900;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&display=swap');
 
 *{
     margin: 0;
-    font-family: 'Montserrat', serif;
 }
 
 .container{
@@ -12,12 +11,14 @@
 }
 
 body{
-    background: #2948B7;
+    font-family: 'Montserrat', serif;
+    background: #29212D;
     color: #FAF9F0;
     text-align: center;
 }
 
 .navbar {
+    color: inherit;
     display: flex;
     justify-content: center;
 }
@@ -54,20 +55,25 @@ body{
     font-size: 1.8rem;
 }
 
+.title-text{
+    font-family: 'Chakra Petch', sans-serif;
+    color: #FAF9F0;
+    margin: 1rem auto;
+    width:300px;
+    border: 8px solid #FAF9F0;
+    padding: 1.2rem 2rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
 
 
 /* style for about section */
-.title-text,
-#about {
-    padding:1rem 3rem;
-    font-family: 'Fira Code', monospace;
-    font-size: larger;
-}
 
 #about{
-    border: none;
+    padding:1rem 3rem;
+    font-size: larger;
     padding-bottom: 3rem;
-    background-color: #FFFFFF;
     border-radius: 10px;
     color: black;
 }
@@ -77,42 +83,71 @@ body{
 }
 
 .about-info p{
-    width: 700px;
-    text-align: left;
+    color:#FAF9F0;
+    font-family: 'Fira Code', monospace;
+    text-align:justify;
+    margin-bottom: 0;
 }
-#about h1{
-    padding: 10px;
-}
-
 #about div{
     display: flex;
+    margin: 0;
 }
 
 .bishalImg{
+    margin: 0 1rem;
     border-radius:50%;
-    width:150px;
+    width:250px;
 }
 
 
 /* projects info  */
 
 .projects-list{
-    display: grid;
-    grid-template-columns: auto auto;
-   
+    display: block;    
 }
-
+.project-description{
+    align-content: center;
+}
 .project-card{
+    display: flex;
     border-radius: 0.5rem;
-    background-color: #6157a7;
-    margin: 1rem;
+    background-color: #322A36;
+    height: 500px;
+    margin: 3rem auto;
 }
 
-.project-card img{
-    padding: 1rem;
-    width: calc(100% - 40px);
+.project-img{   
+   border-radius: 10px;
+   width: 600px;
+   height: 450px;
+   margin: 1rem;
+   background-size:cover;
 }
+.projects-links{
+    margin-top: 40px;
+    display: flex;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: large;
+    justify-content:center;
+}.project-title{
+    font-size: 2rem;
+    color: #FAF9F0;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-family: 'Chakra Petch', sans-serif;
+}
+.btn-style{
+    display: block;
+    width: 150px;
+    margin: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #3A86FF;
+    border-radius: 30px;
+    padding: 20px 30px;
 
+}
 .project-card p{
     padding: 0.8rem;
     font-family: 'Fira Code', monospace;
@@ -134,53 +169,59 @@ body{
     font-size: 1rem;
     border-radius: 10px;
 }
-
+.url{
+    text-decoration: none;
+    color: inherit;
+}
 
 /* contact section */
 
 #contact{
-    background-color: #FFFFFF;
-    color: #2948B7;
+
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
     margin-bottom: 1rem;
     padding: 2rem;
 }
-
-.form-section{
-    display: flex;
-    border: 2px solid red;
-    flex-direction: column;
-    justify-content: center;
-}
-
 form{
     display: flex;
     flex-direction: column;
 }
 
-#contact p{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-size: 2rem;
-    text-align: left;
+.form-section{
+    width: 600px;
+    display: block;
 }
 
-.form-section h1{
-    font-size: 2rem;
-    margin: 1rem 0;
+.text-input
+{
+    border:none;
+    width: (calc(90%));
+    min-width: calc(90%);
+    min-height: 30px;
+    margin-top: 3rem;
+    color: #ffffff;
+    font-size: 1.6rem;
+    padding: 10px;
+    border-left: 5px solid #FFFFFF;
+    border-bottom: 5px solid #FFFFFF;
+    background-color: transparent;
 }
 
-.text-input{
-    width: 300px;
-    padding: 0.5rem;
-    margin:0.5rem 0;
+#submit-btn{
+    padding: 1rem;
+    margin: 2rem auto;
+    background-color: transparent;
+    border: none;
+    width: calc(50%);
+    color: #ffffff;
+    font-size: 1.6rem;
+    border-left: 5px solid #FFFFFF;
+    border-right: 5px solid #FFFFFF;
 }
 
-.submit-btn{
-    width: 300px;
+
+.hide{
+    display: none;
 }
-
-

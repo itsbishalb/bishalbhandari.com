@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">     <!--icons -->
     <link rel="stylesheet" href="css/style.css">
+    <script src="assets/scripts.js" defer></script>
     <title>Bishal Bhandari</title>
 </head>
 <body>
@@ -32,7 +33,7 @@
         </div>
     </section>
     <section id="about">
-            <h1>About Me</h1>
+        <h1 class="title-text">About Me</h1>
         <div class="about-info">
             <p>
                 I am Bishal Bhandari, 2nd year computer science student. Lorem ipsum dolor sit amet, consectetur a
@@ -48,84 +49,21 @@
         </div>
     </section>
     <section id="projects">
-        <h1 class="title-text" >Projects</h1>
+        <h1 class="title-text">Portfolio</h1>
         <div class="projects-list" id="projects-list">
             
-            <div class="project-card">
-                <h3 class="title-text">University Grade Calculator</h3>
-                <img src="/assets/projects/grade-calculator.png" alt="Project Info">
-                <p>Created with React.js, this is my first react project. I wanted to make this 
-                    calculator so i cancalculate my semester and year average grade. The calculator 
-                    works as expected but it haven't got all the features i wanted yet and will 
-                    be working on creating those features and possibly have own backend as well to store past grade.
-                </p>
-                <div class="btn-list">
-                    <button>View Source Code</button>
-                    <button>View Demo</button>
-                </div>
-            </div>
-
-            
-            <div class="project-card">
-                <h3 class="title-text">University Grade Calculator</h3>
-                <img src="/assets/projects/grade-calculator.png" alt="Project Info">
-                <p>Created with React.js, this is my first react project. I wanted to make this 
-                    calculator so i cancalculate my semester and year average grade. The calculator 
-                    works as expected but it haven't got all the features i wanted yet and will 
-                    be working on creating those features and possibly have own backend as well to store past grade.
-                </p>
-                <div class="btn-list">
-                    <button>View Source Code</button>
-                    <button>View Demo</button>
-                </div>
-            </div>
-
-            
-            <div class="project-card">
-                <h3 class="title-text">University Grade Calculator</h3>
-                <img src="/assets/projects/grade-calculator.png" alt="Project Info">
-                <p>Created with React.js, this is my first react project. I wanted to make this 
-                    calculator so i cancalculate my semester and year average grade. The calculator 
-                    works as expected but it haven't got all the features i wanted yet and will 
-                    be working on creating those features and possibly have own backend as well to store past grade.
-                </p>
-                <div class="btn-list">
-                    <button>View Source Code</button>
-                    <button>View Demo</button>
-                </div>
-            </div>
-
-            
-            <div class="project-card">
-                <h3 class="title-text">University Grade Calculator</h3>
-                <img src="/assets/projects/grade-calculator.png" alt="Project Info">
-                <p>Created with React.js, this is my first react project. I wanted to make this 
-                    calculator so i cancalculate my semester and year average grade. The calculator 
-                    works as expected but it haven't got all the features i wanted yet and will 
-                    be working on creating those features and possibly have own backend as well to store past grade.
-                </p>
-                <div class="btn-list">
-                    <button>View Source Code</button>
-                    <button>View Demo</button>
-                </div>
-            </div>
         </div>
     </section>
     <section id="contact">
-     <div>
-        <p>Drop me a message, <br/> I would like to <br/> hear from you. <br/>
-         </p>
-     </div>
-
-    <div class="form-section">
-        <h1>Get in Touch</h1>
-        <form action="">
-            <input class="text-input" type="text" placeholder="Name">
-            <input class="text-input" type="email" placeholder="Email">
-            <textarea class="text-input" title="message Box" name="message">Message</textarea>
-            <input class="submit-btn" type="submit" value="Send Message">
-        </form>
-    </div>
+       <div class="form-section">
+            <h1 class="title-text">Contact</h1>
+            <form action="">
+                <input class="text-input" type="text" placeholder="ENTER YOUR NAME*" required>
+                <input class="text-input" type="email" placeholder="ENTER YOUR EMAIL*" required>
+                <textarea class="text-input" title="message Box" name="message" placeholder="YOUR MESSAGE*" required></textarea>
+                <input id="submit-btn" type="submit" value="Send Message">
+            </form>
+        </div>
     </section>
 </div>
 </body>
