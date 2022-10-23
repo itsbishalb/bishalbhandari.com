@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=1000; user-scalable=0;" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">     <!--icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">  <!--skills icons -->
     <link rel="stylesheet" href="css/style.css">
@@ -30,7 +30,6 @@
             <a href="https://www.facebook.com/itsbishalb" class="fa fa-facebook" title="facebook"></a>
             <a href="https://www.twitter.com/itsbishalb" class="fa fa-twitter" title="twitter"></a>
             <a href="https://www.instagram.com/itsbishalb/" class="fa fa-instagram" title="instagram"></a>
-
         </div>
     </section>
 
@@ -112,7 +111,7 @@
     <section id="about">
         <h1 class="title-text">About Me</h1>
         <div class="about-info">
-            <p>
+            <p class="desc-text">
                 I am Bishal Bhandari, 2nd year computer science student at University of Nottingham. I am experienced in front end development and currently learning node.js and mongoDB to improve my backend skills.
                 In my free time i like cooking and playing badmintion. I enjoy learning new things and i make use of online resources like freecodecamp to learn new skills. I would like to go in field of cyber secutity 
                 after my graduation.
@@ -141,14 +140,28 @@
     <section id="contact">
        <div class="form-section">
             <h1 class="title-text">Contact</h1>
-            <form action="">
-                <input class="text-input" type="text" placeholder="ENTER YOUR NAME*" required>
-                <input class="text-input" type="email" placeholder="ENTER YOUR EMAIL*" required>
-                <textarea class="text-input" title="message Box" name="message" placeholder="YOUR MESSAGE*" required></textarea>
-                <input id="submit-btn" type="submit" value="Send Message">
+            <form action="" class="contact-form">
+                <input class="text-input" type="text" placeholder="Name" required>
+                <input class="text-input" type="email" placeholder="Email" required>
+                <textarea class="text-input" title="message Box" name="message" placeholder="Message" required></textarea>
+                <div class="form-buttons">
+                    <input id="submit-btn" type="submit" value="Send Message">
+                    <div id="form-social" class="social-links">
+                        <a href="https://github.com/itsbishalb" class="fa fa-github" title="github"></a>
+                        <a href="https://www.linkedin.com/in/itsbishalb/" class="fa fa-linkedin" title="linkedin"></a>
+                        <a href="https://www.facebook.com/itsbishalb" class="fa fa-facebook" title="facebook"></a>
+                        <a href="https://www.twitter.com/itsbishalb" class="fa fa-twitter" title="twitter"></a>
+                        <a href="https://www.instagram.com/itsbishalb/" class="fa fa-instagram" title="instagram"></a>
+                    </div>
+                </div>
+                
             </form>
+           
         </div>
     </section>
+<footer>
+    <p class="small-text">All Rights Reserved 2022 Bishal Bhandari </p>
+</footer>
 </div>
 </body>
 </html>

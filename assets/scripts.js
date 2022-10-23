@@ -27,7 +27,7 @@ function loadHtml () {
         return `<div class="project-card">
         <div class="project-info">
             <h1 class="project-title">${project.name}</h1>
-            <p class="project-description">
+            <p class="project-description desc-text">
              ${project.desc}
             </p>
             <div class="projects-links">
