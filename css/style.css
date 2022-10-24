@@ -286,7 +286,7 @@ body{
 }
 
 .desc-text{
-    font-size: 2rem;
+    font-size: 1.2rem;
 }
 
 footer{
@@ -334,11 +334,13 @@ footer{
     }
     .skill-card p{
         display: block;
+        font-size: 2rem;
         text-transform: uppercase;
         font-family: 'Chakra Petch', sans-serif;  
     }
     .about-info p{
         text-align: center;
+        
         margin-bottom: 0;
     }
     #about div{
@@ -382,9 +384,7 @@ footer{
             font-size: 3rem;
 
         }
-        .project-card p{
-        font-size: 2rem;
-        }
+
         
         .text-input
         {
@@ -394,10 +394,6 @@ footer{
             width: calc(100% - 4rem);
             flex-direction: column;
             margin:1rem;
-        }
-        
-        .desc-text{
-            font-size: 3rem;
         }
 }
 
@@ -447,7 +443,7 @@ footer{
         font-family: 'Chakra Petch', sans-serif;  
     }
     .about-info p{
-        font-size: 1.5rem;
+        font-size: 2rem;
         text-align: left;
         margin-bottom: 0;
     }
@@ -516,7 +512,7 @@ footer{
     }
 
     .desc-text{
-        font-size: 2rem;
+        font-size: 4rem;
     }
 }
 
