@@ -140,12 +140,13 @@
     <section id="contact">
        <div class="form-section">
             <h1 class="title-text">Contact</h1>
-            <form action="" class="contact-form">
-                <input class="text-input" type="text" placeholder="Name" required>
-                <input class="text-input" type="email" placeholder="Email" required>
+            <form action="/mail.php" method="post" class="contact-form">
+                <input class="text-input" type="text" name="name" placeholder="Name" required>
+                <input class="text-input" type="email" placeholder="Email" name="email" required>
+                <input class="text-input" type="text" name="subject" placeholder="Subject" required>
                 <textarea class="text-input" title="message Box" name="message" placeholder="Message" required></textarea>
                 <div class="form-buttons">
-                    <input id="submit-btn" type="submit" value="Send Message">
+                    <input id="submit-btn" type="submit" name="submit" svalue="Send Message">
                     <div id="form-social" class="social-links">
                         <a href="https://github.com/itsbishalb" class="fa fa-github" title="github"></a>
                         <a href="https://www.linkedin.com/in/itsbishalb/" class="fa fa-linkedin" title="linkedin"></a>
