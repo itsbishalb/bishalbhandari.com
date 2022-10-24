@@ -10,5 +10,3 @@ if(isset($_POST['submit'])){
     $txt = "You have received an emal from " . $name . ".\n \n" .$message;
     mail($mailTo,$subject,$txt,$headers)
 }
-?>
-
