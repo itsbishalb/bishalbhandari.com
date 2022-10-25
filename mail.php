@@ -31,10 +31,11 @@ if(isset($_POST['submit'])) {
  
   if ($result1 && $result2) {
     $success = "Your Message was sent Successfully!";
+    echo($success);
   } else {
     $failed = "Sorry! Message was not sent, Try again Later.";
+    echo($failed);
   }
- 
 }
  
 ?>
