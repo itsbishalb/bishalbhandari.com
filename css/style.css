@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,900;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&display=swap');
 
-*{
-    margin: 0;
-}
 
 .container{
-    width: 1000px;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
 }
 
@@ -23,143 +22,134 @@ body{
     justify-content: center;
 }
 
+.social-links a{
+    font-size: 3rem;
+    padding-left: 1rem;
+}
+
 .social-links a, 
 .navbar a {
     text-decoration: none;
     color: white;
 }
-.social-links{
-    margin: 3.8rem auto;
-}
-.social-links a{
-    padding: 0.5rem;
-    font-size: 2rem;
-}
-.navbar a{
-    font-family: 'Fira Code', monospace;
+.navbar a {
     padding: 2rem;
     padding-bottom: 0;
     font-size: 1.2rem;
-}
-#home{
-    margin-top:1rem;
-    display: flex;
-    flex-direction: column;
+    font-family: 'Fira Code', monospace;
 }
 
 .big-text{
-    font-size: 4.6rem;
     font-weight: bold;
     font-style: italic;
 }
-
 .smaller-text{
     font-size: 1.8rem;
 }
 
 .title-text{
-    font-family: 'Chakra Petch', sans-serif;
-    color: #FAF9F0;
     margin: 1rem auto;
-    width:300px;
+    width:350px;
+    padding:0.5rem;
     border: 8px solid #FAF9F0;
-    padding: 1.2rem 2rem;
     font-size: 2rem;
     text-transform: uppercase;
 }
 
-
-
 /* style for about section */
 
 #about{
-    padding:1rem 3rem;
+    padding:1rem;
     font-size: larger;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
     border-radius: 10px;
-    color: black;
 }
 .about-info{
+    display: flex;
     padding: 10px;
-    display: flex;
 }
-
-.about-info p{
-    color:#FAF9F0;
-    font-family: 'Fira Code', monospace;
-    text-align:justify;
-    margin-bottom: 0;
-}
-#about div{
-    display: flex;
-    margin: 0;
-}
-
 .bishalImg{
     margin: 0 1rem;
     border-radius:50%;
     width:250px;
 }
+/* optional section  */
+.hide{
+    display: none;
+}
 
+/* skills section */
+#skills{
+    padding-left: 1rem;
+}
+.skills-grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.skill-card{
+    text-align: center;
+    padding:50px;
+    padding-bottom: 0;
+}
+.skill-card i{
+    display: block;
+    font-size: 100px;
+    margin-bottom: 20px;
+}
+
+.skill-card p{
+    display: block;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-family: 'Chakra Petch', sans-serif;
+    
+}
+
+#skills h2{
+    display: block;
+    text-align: left;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+}
 
 /* projects info  */
-.project-btn{
-    width: 200px;
-    text-align: left;
-    margin:0;
-    cursor: pointer;
-    padding: 20px 40px;
-    border:none;
-    color: #FFFBFB;
-    font-size: 1rem;
-    text-transform: uppercase;
-    background-color: transparent;
-    border-bottom: 3px solid #AAAAAA;
-    animation-delay: 2s;
-}
-#one{
-    border-bottom: 3px solid #fff;
-}
-.projects-choice{
-    display: flex;
-    justify-content: center;
-}
-.projects-list{
-    display: block;    
-}
-.project-description{
-    align-content: center;
-}
 .project-card{
     display: flex;
     border-radius: 0.5rem;
     background-color: #322A36;
-    height: 500px;
     margin: 3rem auto;
 }
 
-.project-img{   
-   border-radius: 10px;
-   width: 600px;
-   height: 450px;
-   margin: 1rem;
-   background-size:cover;
+.projects-list{
+    display: flex; 
+    flex-direction: column;  
 }
-.projects-links{
-    margin-top: 40px;
-    display: flex;
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: large;
-    justify-content:center;
-}.project-title{
-    font-size: 2rem;
-    color: #FAF9F0;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    text-transform: uppercase;
-    font-family: 'Chakra Petch', sans-serif;
+.project-description{
+    align-content: center;
 }
-.btn-style{
+
+.project-card{
+    display: grid; 
+    grid-template-areas:
+    'desc desc img img'
+    'btn btn img img';  
+}
+
+.project-img{
+    margin: 1rem;
+    grid-area: img;
+    margin-bottom: 0;
+    width: 300px;                                                                                                                                                                                                                                                                                                                                                                                                                                                               ;
+}
+.project-info{
+    grid-area: desc;
+}
+.project-info p{
+    padding: 1rem 2rem;
+ }
+
+ .btn-style{
     display: block;
     width: 150px;
     margin: 10px;
@@ -168,35 +158,31 @@ body{
     background-color: #3A86FF;
     border-radius: 30px;
     padding: 20px 30px;
-
-}
-.project-card p{
-    padding: 0.8rem;
-    font-family: 'Fira Code', monospace;
 }
 
-.btn-list{
+.projects-links{
+    grid-area: btn;
     display: flex;
-    justify-content: space-evenly;
-    padding-bottom: 3rem;
+    font-size: large;
+    justify-content:center;
 }
 
-.btn-list button,
-.submit-btn{
-    width: calc(50% - 1rem);
-    padding: 0.8rem 1.5rem;
-    border:2px solid rgb(255, 135, 6);
-    background-color: transparent;
-    font-family: 'Fira Code', monospace;
-    font-size: 1rem;
-    border-radius: 10px;
+.project-title{
+    font-size: 2rem;
+    color: #FAF9F0;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.project-card:last-of-type{
+    margin-bottom: 0;
 }
 .url{
     margin-top:0;
     text-decoration: none;
     color: white
 }
-
 .url:hover{
     border-bottom: 2px solid white;
 }
@@ -206,6 +192,7 @@ body{
 #contact{
     align-items: center;
 }
+
 .contact-form{
     display: flex;
     margin: 0 auto;
@@ -231,6 +218,7 @@ body{
     margin:1rem;
 
 }
+
 #submit-btn{
     background-color: #FFFFFF;
     border: none;
@@ -240,282 +228,195 @@ body{
     order: 2;
 }
 
-#form-social{
-    padding: 0;
-    margin: 0;
-    order:1;
-}
 
-/* optional section  */
-.hide{
-    display: none;
-}
 
-  
-/* skills sdection */
-#skills h2{
-    padding-left: 4rem;
-    display: block;
-    text-align: left;
-    margin-top: 3rem;
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 1.5rem;
-}
-.skills-grid{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-}
-
-.skill-card{
-    text-align: center;
-    padding:50px;
-    padding-bottom: 0;
-}
-
-.skill-card i{
-    display: block;
-    font-size: 100px;
-    margin-bottom: 20px;
-}
-.skill-card p{
-    display: block;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    font-family: 'Chakra Petch', sans-serif;
-    
-}
-
-.desc-text{
-    font-size: 1.2rem;
-}
-
-footer{
-    margin: 1rem;
-}
-
-@media (max-width: 600px){
-    .navbar{
-        display: none;
+@media (max-width: 500px){
+    /* top section */
+    .social-links{
+        margin: 1rem 3.5rem;
     }
-
-  
     .social-links a{
-        padding: 2rem;
-        font-size: 5rem;
-    }
-
-
-    .smaller-text{
-        font-size: 4rem;
-        padding: 20px;
-    }
- 
-
-    .big-text{
-        font-size: 6rem;
-    }
-
-    #skills h2{
-        font-size: 3.5rem;
-    }
-
-     .title-text{
-        font-size: 3.5rem;
-     }
-
-     .skills-grid{
-        grid-template-columns: auto auto auto;
-    }
-    
-    .skill-card i{
-        display: block;
-        font-size: 200px;
-        margin-bottom: 30px;
-    }
-    .skill-card p{
-        display: block;
+        padding: 0.5rem;
         font-size: 2rem;
-        text-transform: uppercase;
-        font-family: 'Chakra Petch', sans-serif;  
     }
-    .about-info p{
-        text-align: center;
-        
-        margin-bottom: 0;
-    }
-    #about div{
-        display: block;
-        margin: 0;
-    }
-    
-    .bishalImg{
-        margin-top: 1rem;
-        border-radius:10%;
-        width:600px;
-        transition: 1s;
-    }
-
-    .project-btn{
-        font-size: 2.3rem;
-        text-align: center;
-        width: 300px;
-        transition: 1s;
-    }
-
-
-        .project-card{
-            height: fit-content;
-            width: calc(100% - 6rem);
-        }
-
-        .project-img{   
-        display: none;
-        }
-        .projects-links{
-            flex-direction: column;
-            align-items: center;    
-            margin-bottom: 1rem;
-        }
-        .project-title{
-            font-size: 4rem;
-        }
-        .btn-style{
-            width: 350px;
-            font-size: 3rem;
-
-        }
-
-        
-        .text-input
-        {
-            font-size: 2rem;
-        }
-        .form-buttons{
-            width: calc(100% - 4rem);
-            flex-direction: column;
-            margin:1rem;
-        }
-}
-
-
-@media (max-width: 800px){
     .navbar a{
+        display: none;
+    }
+    .big-text{
+        margin:0;
         font-size: 2rem;
     }
-
-  
-    .social-links a{
-        padding: 2rem;
-        font-size: 5rem;
-    }
-
-
     .smaller-text{
-        font-size: 4rem;
-        padding: 20px;
+        margin:0.5rem;
+        font-size: 1.4rem;
     }
 
-    .big-text{
-        font-size: 6rem;
+    .title-text{
+        width:250px;
+        font-size: 2rem;
     }
-
-    #skills h2{
-        font-size: 3.5rem;
-    }
-
-     .title-text{
-        font-size: 3.5rem;
+    .project-img{   
+        border-radius: 10px;
+        width: 600px;
+        height: 450px;
+        margin: 1rem;
+        background-size:cover;
      }
+    
+     .project-card p{
+        padding: 0.8rem;
+        font-size: 1.3rem;
+    }
+    /* style for about section */
 
-     .skills-grid{
+    .bishalImg{
+     border-radius: 0;
+    }
+
+    .about-info{
+        display: block;
+    }
+
+    /* skills section */
+
+    .skills-grid{
         grid-template-columns: auto auto auto;
     }
-    
+    .skill-card{
+        padding: 5px 0;
+    }
     .skill-card i{
         display: block;
-        font-size: 200px;
-        margin-bottom: 30px;
+        font-size: 4rem;
+
     }
     .skill-card p{
         display: block;
-        font-size: 2.2rem;
-        text-transform: uppercase;
-        font-family: 'Chakra Petch', sans-serif;  
-    }
-    .about-info p{
-        font-size: 2rem;
-        text-align: left;
-        margin-bottom: 0;
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
     }
 
-    .bishalImg{
-        height: 400px;
-        border-radius: 1rem;
+    /* portfolio section  */
+
+    .project-card{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
     }
-        
+    .projects-links{
+        order:3;
+    }
+    .project-img{
+        order: 2;
+        width: 90%;
+        height: 300px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ;
+    }
+    .project-info{
+        order: 1;
+    }
+    .project-info p{
+        margin-top:0;
+        padding: 0.5rem;
+    }
+    .projects-links{
+        display: block;
+        margin: 1rem auto;
+    }
     .project-title{
         font-size: 2rem;
+        margin-bottom: 0;
     }
 
-    .project-img{
-        height: 400px;
-        width: 300px;
-    }
-    .btn-style{
-        width: 250px;
-        font-size: 1.5rem;
-
-        }
-    .project-card p{
-        font-size: 1.2rem;
+    /* contact  */
+    .text-input{
+        max-width: 350px;
+        min-width: 350px;
     }
     .text-input
     {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
- 
     .form-buttons{
-        width: calc(100% - 4rem);
+        max-width: 300px;
         flex-direction: column;
-        margin:1rem;
     }
-    
-    
-    .text-input{
-        min-width: 800px;
-        padding: 20px;
-        color: #FAF9F0;
-        border: 2px solid #FFFFFF;
-        background-color: transparent;
-    }
-
-    .contact-form{
-        width: 800px;
-    }
-    
     #submit-btn{
-        padding:20px;
-        font-size: 2.5rem;
+        width: 350px;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+        order: 1;
     }
-    
+
     #form-social{
-       
         order: 2;
-        padding: 0;
-        margin: 0;
-        margin-top: 1rem;
+        margin: 1rem auto;
     }
 
-    #form-social a{
-        margin:20px;
-        padding: 5px;
-    }
-
-    .desc-text{
-        font-size: 4rem;
-    }
 }
+@media (min-width: 500px) and (max-width: 800px){
+  /* style for about section */
 
+  .bishalImg{
+    border-radius: 0;
+   }
+
+   .about-info{
+       display: block;
+   }
+    /* skills section */
+
+    .skills-grid{
+        grid-template-columns: auto auto auto auto;
+    }
+    .skill-card{
+        padding: 5px 0;
+    }
+    .skill-card i{
+        display: block;
+        font-size: 4rem;
+
+    }
+    .skill-card p{
+        display: block;
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+    /* portfolio section  */
+
+    .project-card{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .projects-links{
+        order:3;
+    }
+    .project-img{
+        order: 2;
+        width: 90%;
+        height: 300px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ;
+    }
+    .project-info{
+        order: 1;
+    }
+    .project-info p{
+        margin-top:0;
+        padding: 0.5rem;
+    }
+    .projects-links{
+        display: block;
+        margin: 1rem auto;
+    }
+    .project-title{
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+
+
+    
+
+}
 
 
 
