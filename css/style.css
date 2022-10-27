@@ -198,14 +198,16 @@ body{
 
 /* contact section */
 #contact{
-    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+
 }
 
 .contact-form{
     display: flex;
     margin: 0 auto;
     flex-direction: column;
-    width: 500px;
     margin-bottom: 10px;
 }
 
@@ -338,7 +340,7 @@ body{
     /* contact  */
     .text-input{
         max-width: 350px;
-        min-width: 350px;
+        min-width: auto;
     }
     .text-input
     {
@@ -349,7 +351,6 @@ body{
         flex-direction: column;
     }
     #submit-btn{
-        width: 350px;
         padding: 0.5rem;
         font-size: 1.5rem;
         order: 1;
@@ -359,6 +360,13 @@ body{
         order: 2;
         margin: 1rem auto;
     }
+
+    .project-img{
+        height: auto;
+        margin: 0 auto;
+    }
+
+
 
 }
 @media (min-width: 500px) and (max-width: 800px){
@@ -420,7 +428,40 @@ body{
         font-size: 2rem;
         margin-bottom: 0;
     }
+    .project-img{
+        height: auto;
+        margin: 0 auto;
+    }
 
+
+        /* contact  */
+        .text-input{
+            max-width: 350px;
+            min-width: auto;
+        }
+        .text-input
+        {
+            font-size: 1.5rem;
+        }
+        .form-buttons{
+            max-width: 300px;
+            flex-direction: column;
+        }
+        #submit-btn{
+            padding: 0.5rem;
+            font-size: 1.5rem;
+            order: 1;
+        }
+    
+        #form-social{
+            order: 2;
+            margin: 1rem auto;
+        }
+    
+        .project-img{
+            height: auto;
+            margin: 0 auto;
+        }
 
     
 
