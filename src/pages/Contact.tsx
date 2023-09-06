@@ -1,6 +1,6 @@
 import React from "react"
 
-export const ContactSection : React.FC = () => {
+const ContactSection : React.FC = () => {
     return (
         <section id="contact">
         <div className="form-section">
@@ -26,3 +26,5 @@ export const ContactSection : React.FC = () => {
      </section>
     )
   }
+
+    export default ContactSection;

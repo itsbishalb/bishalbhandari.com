@@ -1,7 +1,7 @@
 import React from "react"
 // @ts-ignore
 import bishalImage from '../images/bishalbhandari.jpg'
-export const AboutSection : React.FC = () => {
+ const AboutSection : React.FC = () => {
     return (
     <section id="home">
       <h1 className="title-text">About Me</h1>
@@ -17,4 +17,5 @@ export const AboutSection : React.FC = () => {
     )
   }
   
+  export default AboutSection;
   

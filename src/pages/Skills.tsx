@@ -3,7 +3,7 @@ interface SkillCardProps {
     name: string;
     className: string
   }
-export const SkillCard : React.FC<SkillCardProps> = ({ name,className }) => {
+const SkillCard : React.FC<SkillCardProps> = ({ name,className }) => {
     return(
        <div className={"skill-card"}>
          <i className={className}></i>
@@ -12,7 +12,7 @@ export const SkillCard : React.FC<SkillCardProps> = ({ name,className }) => {
      );
    }
     
-   export const SkillsSection : React.FC = () => {
+const SkillsSection : React.FC = () => {
      return (
        <section id="skills">
        <h1 className="title-text">Skills</h1>
@@ -26,7 +26,7 @@ export const SkillCard : React.FC<SkillCardProps> = ({ name,className }) => {
      )
    }
    
-   export const UsingNowSkills : React.FC = () => {
+ const UsingNowSkills : React.FC = () => {
      return (
        <div className="using-now skills-grid">
         <SkillCard name="HTML 5" className="devicon-html5-plain colored" />
@@ -49,11 +49,12 @@ export const SkillCard : React.FC<SkillCardProps> = ({ name,className }) => {
      )
    }
    
-   
-   export const LearningSkills : React.FC = () => {
+const LearningSkills : React.FC = () => {
      return (
        <div className="learning skills-grid">
          <SkillCard name="Docker" className="devicon-docker-plain" />
        </div>
      )
    }
+
+export default SkillsSection;

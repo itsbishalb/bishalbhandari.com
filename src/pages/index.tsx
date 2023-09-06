@@ -4,10 +4,10 @@ import "../styles/global.css"
 import 'font-awesome/css/font-awesome.min.css';
 import 'devicon'
 
-import { SkillsSection } from "./Skills";
-import { AboutSection } from "./About";
-import { HeroSection } from "./Hero";
-import { ContactSection } from "./Contact";
+import  SkillsSection  from "./Skills";
+import AboutSection from "./About";
+import HeroSection  from "./Hero";
+import ContactSection from "./Contact";
 
 
 export const NavMenu: React.FC = () => {

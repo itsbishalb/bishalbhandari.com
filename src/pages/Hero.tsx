@@ -1,6 +1,6 @@
 import React from "react"
 
-export const HeroSection : React.FC = () => {
+const HeroSection : React.FC = () => {
     return (
       <section id="home">
       <p className="smaller-text" id="hellotext">Hello,</p>
@@ -16,3 +16,5 @@ export const HeroSection : React.FC = () => {
   </section>
     )
   }
+
+  export default HeroSection;

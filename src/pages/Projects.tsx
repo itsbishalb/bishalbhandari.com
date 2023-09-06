@@ -1,6 +1,5 @@
 import React from "react"
-
-export const AboutSection : React.FC = () => {
+const AboutSection : React.FC = () => {
     return (
         <section id="projects">
         <h1 className="title-text">Portfolio</h1>
@@ -19,3 +18,4 @@ export const AboutSection : React.FC = () => {
     )
   }
   
+    export default AboutSection;
